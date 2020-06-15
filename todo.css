@@ -1,0 +1,177 @@
+
+html {
+	background-image: url("https://images.unsplash.com/photo-1592234359408-46776a92cca4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	
+}
+
+
+ul {
+	list-style-type: none;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#outerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* for the origianl input text box already existing on page:*/
+#newTodo {
+	height: 2em;
+	width: 12em;
+    font-size: 1em;
+	text-decoration: underline;
+    border: transparent;
+    padding: 0.5em 0.5em;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+/* margin for the four icons: */
+.addIcon, .resetIcon, .editIcon, .deleteIcon {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+
+.newLi {
+  line-height: 1.8em;
+}
+
+
+/*for all newly entered input text boxes:*/
+.enteredItem {
+  border: transparent;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  width: 30%;
+  
+}
+
+
+
+.itemCompleted {
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+
+#addButton, #resetButton, .editIcon, .deleteIcon:hover {
+	cursor: pointer;
+}
+
+
+/* Hoverable dropdown menu for Edit icon: */
+.editIcon {
+  position: relative;
+  display: inline-block;
+
+}
+
+.ddE {
+  display: none;
+  position: absolute;
+  font-size: 0.5em;
+  background-color: #f9f9f9;
+  min-width: 2em;
+  box-shadow: 0em 2em 2em 0em rgba(0,0,0,0.2);
+  padding: 0.5em 0.5em;
+  z-index: 1;
+}
+
+.editIcon:hover .ddE {
+  display: block;
+}
+
+
+/* Hoverable dropdown menu for Delete icon: */
+.deleteIcon {
+  position: relative;
+  display: inline-block;
+
+}
+
+.ddD {
+  display: none;
+  position: absolute;
+  font-size: 0.5em;
+  background-color: #f9f9f9;
+  min-width: 2em;
+  box-shadow: 0em 2em 2em 0em rgba(0,0,0,0.2);
+  padding: 0.5em 0.5em;
+  z-index: 1;
+}
+
+.deleteIcon:hover .ddD {
+  display: block;
+}
+
+
+/* Hoverable dropdown menu for Add icon: */
+.addIcon {
+  position: relative;
+  display: inline-block;
+
+}
+
+.ddA {
+  display: none;
+  position: absolute;
+  font-size: 0.5em;
+  background-color: #f9f9f9;
+  min-width: 2em;
+  box-shadow: 0em 2em 2em 0em rgba(0,0,0,0.2);
+  padding: 0.5em 0.5em;
+  z-index: 1;
+}
+
+.addIcon:hover .ddA {
+  display: block;
+}
+
+
+/* Hoverable dropdown menu for Reset icon: */
+.resetIcon {
+  position: relative;
+  display: inline-block;
+
+}
+
+.ddR {
+  display: none;
+  position: absolute;
+  font-size: 0.5em;
+  background-color: #f9f9f9;
+  min-width: 2em;
+  box-shadow: 0em 2em 2em 0em rgba(0,0,0,0.2);
+  padding: 0.5em 0.5em;
+  z-index: 1;
+}
+
+.resetIcon:hover .ddR {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
